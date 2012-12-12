@@ -1,0 +1,9 @@
+# Object files
+*.o
+
+# Other generated/compiled files
+*.elf
+*.hex
+*.eep
+*.lss
+*.sym
