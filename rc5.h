@@ -28,8 +28,6 @@
 #include <avr/interrupt.h>
 #include <inttypes.h>
 
-#include "ISRMacro.h"
-
 extern volatile int8_t rc5_valid;
 extern volatile uint16_t rc5_stream;
 
