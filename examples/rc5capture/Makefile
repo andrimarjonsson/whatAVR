@@ -8,7 +8,7 @@
 MCU = atmega32
 FORMAT = ihex
 TARGET = main
-WHATEVER_PATH = ../whatAVR
+WHATEVER_PATH = ../../../whatAVR
 SRC_PATH = src
 SRC = $(SRC_PATH)/$(TARGET).c $(WHATEVER_PATH)/rc5.c $(WHATEVER_PATH)/usart.c
 ASRC = 
@@ -33,7 +33,7 @@ CSTANDARD = -std=gnu99
 CDEFS =
 
 # Place -I options here
-CINCS = -I $(WHATEVER_PATH)
+CINCS = -I$(WHATEVER_PATH) -I$(SRC_PATH)
 
 
 CDEBUG = -g$(DEBUG)
