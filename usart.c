@@ -17,10 +17,7 @@ void usart_init( uint32_t _baudrate )
 
 uint8_t usart_getc( void )
 {
-    //do{}
-    //while ( !( UCSRA & ( 1 << RXC ) ) );
-    
-    loop_until_bit_is_clear(UCSRA, RXC);     //Wait for USART to be ready
+    loop_until_bit_is_set(UCSRA, RXC);     //Wait for USART to be ready
     return UDR;
 }
 
