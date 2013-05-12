@@ -39,7 +39,7 @@ CINCS = -I$(WHATEVER_PATH) -I$(SRC_PATH)
 CDEBUG = -g$(DEBUG)
 CWARN = -Wall -Wstrict-prototypes
 CTUNING = -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums
-#CEXTRA = -Wa,-adhlns=$(<:.c=.lst)
+#CEXTRA = -Wa,-adhlns=$(<:.c=.lst) # Generate list files.
 CFLAGS = $(CDEBUG) $(CDEFS) $(CINCS) -O$(OPT) $(CTUNING) $(CWARN) $(CSTANDARD) $(CEXTRA)
 
 
